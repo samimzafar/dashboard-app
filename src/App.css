@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app {
+    width: 100%;
+    background-color: #F4F5F7;
+    min-height: 100vh;
+    display: flex;
+}
+
+.color-green {
+    background-color: #598500;
+}
+
+.color-blue {
+    background-color: #7467F0;
+}
+
+.color-red {
+    background-color: #DB1974;
+}
+
+.side-bar {
+    min-height: 100vh;
+    width: 20%;
+    padding: 15px;
+    background: #192D3E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 15px #00000014;
+}
+
+.side-bar>div>img {
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.side-bar-logo {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.side-bar-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.side-bar-info>div>p {
+    font: normal 20px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding-right: 15px;
+}
+
+.side-bar-info>div>i {
+    color: #FFFFFF;
+}
+
+.side-bar-info-name {
+    display: flex;
+    align-items: center;
+}
+
+.side-bar-icon {
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar-icon>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.side-bar-icon>div:hover {
+    background-color: #06172B;
+}
+
+.side-bar-icon>div>p {
+    color: #ffff;
+    border-radius: 24px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.side-bar-icon>div>p>i {
+    font-size: 20px;
+}
+
+.side-bar-icon>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.side-bar-icon>div>div>i {
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.side-bar-icon>div>div>i:hover {
+    color: #00C3B3;
+    cursor: pointer;
+}
+
+.side-bar-icon>div>div>p:hover {
+    color: #00C3B3;
+    cursor: pointer;
+}
+
+.side-bar-icon>div>div>p {
+    padding-left: 10px;
+    font: normal 300 20px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+}
+
+.body {
+    width: 80%;
+}
+
+.header {
+    position: fixed;
+    width: 80%;
+    padding: 15px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 4px 6px #0000000F;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.header>div>i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header-icon {
+    display: flex;
+    align-items: center
+}
+
+.header-icon>i {
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.header-icon>i:last-of-type {
+    padding-right: 0px;
+}
+
+.badge {
+    position: absolute;
+    top: 3px;
+    background-color: #00C3B3;
+    color: white;
+    border-radius: 24px;
+    width: 20px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: -15px;
+    cursor: pointer;
+}
+
+.student-dashboard {
+    margin-top: 80px;
+    padding: 15px;
+}
+
+.student-dashboard>p {
+    font: 400 24px Montserrat;
+    letter-spacing: 0.48px;
+    color: #707071;
+    padding: 0px 5px 15px 5px;
+}
+
+.first-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.first-row>div {
+    flex: 1;
+    margin: 5px 20px 5px 5px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+}
+
+.attendance-curve {
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.attendance-curve>i {
+    background-color: #EEEDFC;
+    font-size: 30px;
+    color: #6457E8;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.attendance-curve>p {
+    font: 400 28px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #192D3E;
+    padding-top: 5px;
+}
+
+.attendance-curve>p:last-of-type {
+    font: normal 20px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #707071;
+    padding-bottom: 20px;
+}
+
+.second-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.second-row-class {
+    flex: 1;
+}
+
+.next-class, .coming-event {
+    background-color: #FFFFFF;
+    height: 270px;
+    margin: 5px 20px 15px 5px;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.next-class>i, .coming-event>i {
+    background-color: #EEEDFC;
+    font-size: 30px;
+    color: #6457E8;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.next-class>p, .coming-event>p {
+    font: 400 28px/40px Montserrat;
+    letter-spacing: 0px;
+    color: #192D3E;
+    padding-top: 5px;
+}
+
+.next-class>p:last-of-type, .coming-event>p:last-of-type {
+    font: normal 20px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #707071;
+    padding-bottom: 20px;
+}
+
+.next-class>button {
+    font: 400 22px/27px Montserrat;
+    letter-spacing: 0px;
+    color: #000000;
+    border: none;
+    background: #EEEDFC 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 3px;
+}
+
+.second-row-graph {
+    flex: 2;
+    background-color: #FFFFFF;
+    margin: 5px 20px 15px 10px;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+}
+
+.second-row-graph>div {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.third-row>div {
+    background-color: #FFFFFF;
+    flex: 1;
+    margin: 5px 20px 5px 5px;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+}
+
+.attendance>div, .calendar>div {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attendance>div>div {
+    display: flex;
+    align-items: center;
+}
+
+.attendance>div>div>p, .calendar>div>div>p {
+    font: normal 22px/27px Montserrat;
+    letter-spacing: 0.44px;
+    color: #192D3E;
+}
+
+.attendance>div>div>i, .calendar>div>div>i {
+    font-size: 18px;
+    letter-spacing: 0.44px;
+    color: #192D3E;
+    padding-right: 10px;
+}
+
+.attendance>div>div>i:last-of-type, .calendar>div>div>i:last-of-type {
+    padding-right: 0;
+}
+
+.calendar-component>.react-calendar {
+    width: 100% !important;
+    line-height: 0 !important;
+    border: none !important;
+}
+
+.calendar-component>.react-calendar>.react-calendar__navigation {}
+
+.fourth-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.fourth-row>div {
+    padding: 20px;
+    background-color: #FFFFFF;
+    height: 270px;
+    flex: 1 1;
+    margin: 5px 20px 5px 5px;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+}
+
+.fourth-row>div>div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.name-info {
+    display: flex;
+}
+
+.name-info>img {
+    height: 40px;
+    padding-right: 10px;
+}
+
+.name-info>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name-info>div>p {
+    font: 400 20px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #080E39;
+}
+
+.name-info>div>p:last-of-type {
+    font: normal 18px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #707071;
+}
+
+.date-info>p {
+    font: normal 18px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #707071;
+}
+
+.imp-msg>p {
+    font: bold 15px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #080E39;
+}
+
+.paragraph>p {
+    font: normal 20px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #707071;
+}
+
+.icon-green {
+    background-color: #598500;
+}
+
+.icon-red {
+    background-color: #DB0707;
+}
+
+.icon-blue {
+    background-color: #00C3B3;
+}
+
+.hover-icons>i {
+    font-size: 20px;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 12px #0000005c;
+    border-radius: 10px;
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.fifth-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.fifth-row>div {
+    background-color: rgb(61, 169, 41);
+    height: 270px;
+    flex: 1 1;
+    margin: 5px 20px 5px 5px;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+}
+
+.sixth-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.sixth-row>div {
+    background-color: rgb(61, 169, 41);
+    height: 270px;
+    flex: 1 1;
+    margin: 5px 20px 5px 5px;
+    box-shadow: 0px 0px 10px #00000026;
+    border-radius: 5px;
+}
+
+.seventh-row {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.grey-color {
+    background-color: #A1A1A1;
+}
+
+.dark-grey-color {
+    background-color: #707071;
+}
+
+.seventh-row>button {
+    margin-right: 15px;
+    border: none;
+    border-radius: 11px;
+    font: 400 22px/19px Montserrat;
+    letter-spacing: 0px;
+    color: #FAFAFA;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.seventh-row>button:focus {
+    outline: none !important;
+}
